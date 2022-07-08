@@ -89,7 +89,7 @@ class Comment(db.Model):
     parent_post = relationship("BlogPost", back_populates="comments") # Create a Child relationship with the BlogPost table
 
 
-db.create_all()
+# db.create_all()
 
 
 @app.route('/')
